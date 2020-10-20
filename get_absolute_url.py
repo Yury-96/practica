@@ -1,11 +1,11 @@
 def get_absolute_url(url, *args, **kwargs):
     s = ''
-    s = s + url
+    s = s +url
     for i in args:
-        s = s + '/' + i
-    s = s + '?'
+        s = s +'/' +i
+    s = s +'?'
     for k, v in kwargs.items():
-        s = s + k + '=' + v + '&'
+        s = s +k +'=' +v +'&'
     s = s[:len(s)-1]
     return s
 
