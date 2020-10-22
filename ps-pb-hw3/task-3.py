@@ -9,7 +9,8 @@ while current<10**7:
     quantity +=1
     temp = current
     current +=previous
-    previous = temp
+    if current < 10**7:
+        previous = temp
 
 print()
 print(f'Количество элементов последовательности: {quantity}')
